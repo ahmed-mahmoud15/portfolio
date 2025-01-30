@@ -4,54 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="css/style.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Portfolio of Ahmed Mahmoud, a .NET Full-Stack Developer specializing in scalable web solutions">
+    <title>Ahmed Mahmoud | .NET Full-Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certificates">Certificates</a></li>
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
+                <li class="navbar__item"><a href="#skills" class="navbar__link">Skills</a></li>
+                <li class="navbar__item"><a href="#certificates" class="navbar__link">Certificates</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about section-padding">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Me</h2>
+                    <h1 class="section-title">Ahmed Mahmoud</h1>
+                    <p class="lead">
+                        <strong>.NET Full-Stack Developer</strong> passionate about building cutting-edge web solutions
+                        that are not just functional but also scalable, secure, and user-friendly.
+                    </p>
                     <p>
-                        Hi, I'm <strong>Ahmed Mahmoud</strong>, a <strong>.NET Full-Stack Developer</strong>
-                        passionate about building cutting-edge web solutions that are not just functional but also scalable,
-                        secure, and user-friendly. With a keen eye for detail and a strong foundation in both front-end and back-end
+                        With a keen eye for detail and strong foundation in both front-end and back-end
                         development, I transform ideas into high-performing digital experiences. I thrive on solving complex problems,
-                        optimizing performance, and ensuring that every application I develop is robust, maintainable, and future-proof.
-                        Whether it's crafting intuitive user interfaces or architecting efficient backend systems,
-                        I bring innovation and reliability together to create solutions that truly make an impact.
+                        optimizing performance, and ensuring robust, maintainable applications.
                     </p>
 
-                    <div class="contact-info">
-                        <a href="mailto:ahmedmahmoud15403@gmail.com" target="_blank" class="contact-link"> Email</a>
-                        <a href="https://www.linkedin.com/in/ahmedmahmoud154/" target="_blank" class="contact-link"> LinkedIn</a>
-                        <a href="https://github.com/ahmed-mahmoud15" target="_blank" class="contact-link"> GitHub</a>
-                        <a href="https://leetcode.com/u/Hamata/" target="_blank" class="contact-link"> LeetCode</a>
+                    <div class="contact-list">
+                        <a href="mailto:ahmedmahmoud15403@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fas fa-envelope"></i>Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmedmahmoud154/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fab fa-linkedin"></i>LinkedIn
+                        </a>
+                        <a href="https://github.com/ahmed-mahmoud15" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fab fa-github"></i>GitHub
+                        </a>
+                        <a href="https://leetcode.com/u/Hamata/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fas fa-code"></i>LeetCode
+                        </a>
                     </div>
-
-                    <a href="assets/cv.pdf" class="cv-button" target="_blank">Download CV</a>
+                    <br />
+                    <a href="assets/Ahmed Mahmoud Resume.pdf" class="btn btn--primary" download target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-download"></i>Download CV
+                    </a>
                 </div>
-                <div class="about-image">
-                    <img src="assets/img.jpg" alt="Ahmed Mahmoud">
-                </div>
+                <figure class="about-image">
+                    <img src="assets/img.jpg" alt="Portrait of Ahmed Mahmoud" width="300" height="300" loading="lazy">
+                </figure>
             </div>
         </div>
     </section>
+
+    <br /><br />
 
     <!-- Projects Section -->
     <section id="projects">
@@ -82,23 +95,25 @@
         </div>
     </section>
 
+    <br /><br />
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2>Skills</h2>
             <ul>
-                <li>Java</li>
                 <li>C#</li>
+                <li>Java</li>
                 <li>Python</li>
                 <li>OOP</li>
-                <li>Html</li>
-                <li>CSS</li>
+                <li>Html / CSS</li>
                 <li>SQL</li>
                 <li>SQL Server</li>
+                <li>Restful API</li>
             </ul>
         </div>
     </section>
 
+    <br /><br />
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
         <div class="container">
@@ -135,15 +150,13 @@
                     <img src="assets/2024.jpeg" alt="Leet Code Badge" />
                 </div>
             </div>
-
-
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Ahmed Mahmoud. All Rights Reserved.</p>
+            <p>&copy; 2025 Ahmed Mahmoud. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
